@@ -1,67 +1,53 @@
-# .NET Core
-# Build results
+# .NET Core / .NET 5, 6, 7, 8
+## 依存関係とビルドの成果物
 bin/
 obj/
 
-# User-specific files
+# ローカルの設定ファイル
+.idea/
+.vscode/
 .vs/
-.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# SignalR の一時的なファイル
+# SignalR で生成される一時的なファイルがあればここに追加
+signalr/*
+
+# 依存関係のキャッシュ
+.nuget/
+packages/
+
+# プロジェクトの設定ファイル
+project.lock.json
+project.fragment.lock.json
+
+# アプリケーションのビルド出力（MSBuild）
+publish/
+
+# ASP.NET Core のサーバー側のエラーログ
+logs/
+
+# 自動生成されたファイル
+Generated\_Files/
+
+# Visual Studio Code のワークスペースファイル
 .vscode/
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows Installer packages
-*.exe
-*.dll
-
-# ASP.NET Core
-wwwroot/
-node_modules/
-
-# TypeScript
-# Output of the TypeScript compiler
-*.js
-*.js.map
-*.d.ts
-*.tsbuildinfo
-
-# npm log files
-npm-debug.log
-yarn-debug.log
-yarn-error.log
-
-# dotenv environment variable files
-.env
-
-# ASP.NET Core development settings
-appsettings.Development.json
-appsettings.json
-appsettings.Local.json
-
-# VS Code directories
-.vscode/
-
-# JetBrains Rider (IDE)
+# JetBrains Rider の一時ファイル
 .idea/
 
-# macOS
-.DS_Store
-
-# Linux
-*~
-
-# Windows
+# Windows のサムネイルキャッシュ
 Thumbs.db
 
-# Ignore logs
-*.log
+# macOS のキャッシュファイル
+.DS_Store
 
-# Ignore Visual Studio user-specific project settings
-*.user
+# npm のキャッシュ（SignalR などで使用する場合）
+node_modules/
 
-# AWSのデプロイ設定
-aws-beanstalk-tools-defaults.json
+# その他の一時ファイル
+*.bak
+*.swp
