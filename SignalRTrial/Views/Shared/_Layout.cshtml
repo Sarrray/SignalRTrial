@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="icon" href="data:,">
+    @RenderSection("Styles", required:false)
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+
+    @RenderSection("Scripts", required:false)
+</body>
+</html>

@@ -1,0 +1,67 @@
+# .NET Core
+# Build results
+bin/
+obj/
+
+# User-specific files
+.vs/
+.idea/
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer packages
+*.exe
+*.dll
+
+# ASP.NET Core
+wwwroot/
+node_modules/
+
+# TypeScript
+# Output of the TypeScript compiler
+*.js
+*.js.map
+*.d.ts
+*.tsbuildinfo
+
+# npm log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# dotenv environment variable files
+.env
+
+# ASP.NET Core development settings
+appsettings.Development.json
+appsettings.json
+appsettings.Local.json
+
+# VS Code directories
+.vscode/
+
+# JetBrains Rider (IDE)
+.idea/
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Windows
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore Visual Studio user-specific project settings
+*.user
+
+# AWSÇÃÉfÉvÉçÉCê›íË
+aws-beanstalk-tools-defaults.json

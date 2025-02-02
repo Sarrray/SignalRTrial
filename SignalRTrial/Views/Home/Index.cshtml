@@ -1,0 +1,49 @@
+﻿@model SignalRTry.ViewModels.HomeViewModel;
+
+<div class="container">
+    <div class="description-area">
+        <h1>サーバーからのリアルタイム通信</h1>
+        <ul>
+            <li>この画面で送信された値は、すべての接続先にリアルタイムで送信されます。</li>
+            <li>送信しても大きな影響はないため、自由に送信いただいて問題ありません。</li>
+            <li>複数の画面で開くと別の接続となるため、複数の画面を開いて操作を確認してみてください。</li>
+            <li>ログはDOMにのみ保存されており、画面を開いた後に出力されたもののみが表示されます。</li>
+            <li>ユーザー名はサーバーのメモリに保存され、すべての接続で共有されています。</li>
+            <li>本画面で入力可能な値は、念のため数字のみとしています。</li>
+            <li>金額のみを受け取るReactアプリは、<a href="@Model.ReactSite" target="_blank" class="link-kochira">こちら</a>からご利用いただけます。</li>
+        </ul>
+    </div>
+    <div class="main-content-area">
+        <div class="kingaku-area">
+            <div class="input-zone">
+                <h3 id="lblMessage" class="hTitle">金額:</h3>
+                <input type="number" id="tbKingaku" class="input-zone-input" />
+                <button id="btnSend" class="input-zone-button">送信</button>
+            </div>
+            <div id="divErrorMessage" class="error-message" style="display:none;"></div>
+            <div id="divMessages" class="messages"></div>
+        </div>
+
+        <div class="user-area">
+            <h3 class="hTitle">自分の名前を設定</h3>
+            <div class="myusername-area">
+                <input type="number" id="tbMyUsername" class="input-myusername" />
+                <button type="button" id="btnSetMyUsrname" class="btn-set-myusername">名前設定</button>
+            </div>
+            <div class="login-user-area">
+                <h3 class="hTitle">ログイン中のユーザー</h3>
+                <ul id="ulUserList" class="user-list"></ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+}
+
+@section scripts {
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/chat.js" asp-append-version="true"></script>
+}
